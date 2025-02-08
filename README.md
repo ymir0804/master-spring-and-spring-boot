@@ -24,8 +24,27 @@ BUILD SUCCESSFUL in 754ms
 - AppGamingBasic에서도 코드를 변경 하는 것이 감소
 
 
-# 2-8 Spring Framework 원리
+# 2-8 Spring Framework Bean 객체 관리 원리
 - SpringFramework Application 실행 시 JVM이 시작 되며 Spring Context를 들고옴
   - Configuration Annotation을 생성 후 context를 들고 와서 Spring Framework가 관리하도록 지정
   - getBean을 이용하여 객체의 값을 가져올 수 있음
-  - 
+
+# 2-11 Spring Frameowrk Q&A
+- Spring Container / Spring Context  / IoC Container
+  - Spring Bean과 Bean 객체의 수명주기를 관리
+  - @configuatrion 어노테이션을 이용하여 생성한 객체 관리
+  - IoC 컨테이너가 런타임 시스템을 생성
+  - Bean Factory는 Basic Spring Container
+- Application Context
+  - AOP, Internationalization과 같은 것들을 하기 쉽게 해주는 것
+    - AnnotationConfigApplicationContext 객체
+- POJO(Plain Old Java Object)
+  - 모든 자바 객체는 POJO
+- Java Bean (EJB)
+  - Constructor에 Argument가  없어야함
+  - getter와 setter가 있어야함
+  - Serializalbe 인터페이스를 구현해야함
+- Spring Bean
+  - 스프링 프레임워크에서 관리되는 모든 Bean 객체
+- 여러개의 Bean이 있는 경우 우선 조치으로 사용할 수 있는 방법
+- 
