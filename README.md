@@ -53,4 +53,10 @@ BUILD SUCCESSFUL in 754ms
 
 ## 3-1 Bean 객체 감소
 - Component & ComponentScan Annotation을 통해 Spring이 객체 관리
+
+## 3-2 여러개의 Bean이 있는 경우 해결 방법
+- NoUniqueBeanDefinitionException 발생
+- Primary, Qualifier Annotation을 통해 해결
+
+## 3-3 Primary vs Qualifier 비교
 - 
